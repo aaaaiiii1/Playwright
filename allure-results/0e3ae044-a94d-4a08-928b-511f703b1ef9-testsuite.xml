@@ -1,0 +1,105 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1664783971220' stop='1664783974514'>
+    <name>The Internet Website Homepage: As HRM user, I can open the HRM Staging Website</name>
+    <title>The Internet Website Homepage: As HRM user, I can open the HRM Staging Website</title>
+    <test-cases>
+        <test-case start='1664783971221' status='passed' stop='1664783971221'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.91'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1664783971221' status='passed' stop='1664783974487'>
+            <name>Given I open the browser and load the url https://hrm-qa.kingwork.vn/login</name>
+            <title>Given I open the browser and load the url https://hrm-qa.kingwork.vn/login</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.91'/>
+            </parameters>
+            <steps>
+                <step start='1664783971222' status='passed' stop='1664783974303'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='a66f8865-23ac-43c9-8615-2526003dcac2-attachment.json' type='application/json' size='47'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1664783974304' status='passed' stop='1664783974484'>
+                    <name>POST /session/:sessionId/window/maximize</name>
+                    <title>POST /session/:sessionId/window/maximize</title>
+                    <attachments>
+                        <attachment title='Response' source='eaf46c79-937e-4b94-90f3-9052baf9378e-attachment.json' type='application/json' size='57'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1664783974487' status='failed' stop='1664783974513'>
+            <name>Then I should see a title WELCOME SIGN IN!</name>
+            <title>Then I should see a title WELCOME SIGN IN!</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.91'/>
+            </parameters>
+            <steps>
+                <step start='1664783974489' status='passed' stop='1664783974504'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='884f27ee-c726-4eb7-bff3-f29577134c84-attachment.json' type='application/json' size='69'/>
+                        <attachment title='Response' source='c00494c6-2754-4089-8da0-de7883fe52c7-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1664783974511' status='failed' stop='1664783974513'>
+                    <name>GET /session/:sessionId/element/ff80c538-301c-4739-9323-e0a834235c77/text</name>
+                    <title>GET /session/:sessionId/element/ff80c538-301c-4739-9323-e0a834235c77/text</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: expect(received).toEqual(expected) // deep equality</message>
+                <stack-trace>Error: expect(received).toEqual(expected) // deep equality
+                
+                Expected: "WELCOME SIGN IN!"
+                Received: {}
+                    at World.&lt;anonymous> (/Users/vinh/PlayWright/Playwright/features/step-definitions/home.steps.ts:10:29)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1664783974513' status='passed' stop='1664783974513'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.91'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

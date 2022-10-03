@@ -5,5 +5,5 @@ Feature: The Internet Website Homepage
     Then I should see a title <homepagetitle>
 
     Examples: 
-      | homepageurl                      | homepagetitle |
-      | https://hrm-qa.kingwork.vn/login | HRM cloud     |
+      | homepageurl                      | homepagetitle    |
+      | https://hrm-qa.kingwork.vn/login | WELCOME SIGN IN! |
