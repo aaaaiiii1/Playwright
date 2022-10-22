@@ -6,21 +6,21 @@ import { Given, Then, When } from '@cucumber/cucumber'
     });
   
     Then(/^tôi xác nhận rằng page có title \"([^\"]*)\"$/,async  function (headertext:string) {
-      const header=$("//h1")
+      const header=$(".styles_title__2vG2b")
       expect(await header).toHaveText(headertext)
     });
   
     Then(/^tôi xác nhận chữ trên page đã đổi thành \"([^\"]*)\"$/,async  function (textchange:string) {
-      const text=$("//h1")
+      const text=$(".styles_title__2vG2b")
       expect(await text).toHaveText(textchange)
     });
   
-    When(/^tôi nhập vào ô firstname (.+) và ô lastname (.+)$/,async  function (fname:string, lname:string) {
-      const fnameInput=$('[name=firstname]')
-      const lnameInput=$('[name=lastname]')
+    When(/^tôi nhập vào ô cellphone (.+) và ô password (.+)$/,async  function (cphone:string, pass:string) {
+      const fnameInput=$("#phone")
+      const lnameInput=$("#password")
 
-      await (await fnameInput).setValue(fname)
-      await (await lnameInput).setValue(lname)
+      await (await fnameInput).setValue(cphone)
+      await (await lnameInput).setValue(pass)
     });
   
     When(/^tôi chọn giới tính là (.+) năm (.+) món chai yêu thích (.+) và lý do (.+)$/,async  function (gender:string, yrs:string, favchai:string, reason:string) {

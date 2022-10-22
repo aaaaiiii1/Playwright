@@ -1,0 +1,141 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1665632566398' stop='1665632566404'>
+    <name>unifypage: Test Login function fail</name>
+    <title>unifypage: Test Login function fail</title>
+    <test-cases>
+        <test-case start='1665632566398' status='passed' stop='1665632566398'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1665632566398' status='failed' stop='1665632566404'>
+            <name>Given tôi vào trang "https://platform-qa-5.unifimoney.net/login"</name>
+            <title>Given tôi vào trang "https://platform-qa-5.unifimoney.net/login"</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+            </parameters>
+            <steps>
+                <step start='1665632566398' status='failed' stop='1665632566404'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='f132053b-745b-4234-aabd-e0992e3e8c26-attachment.json' type='application/json' size='57'/>
+                    </attachments>
+                    <steps>
+                        <step start='1665632566400' status='failed' stop='1665632566404'>
+                            <name>POST /session/:sessionId/elements</name>
+                            <title>POST /session/:sessionId/elements</title>
+                            <attachments>
+                                <attachment title='Request' source='d45bfc9d-8021-425a-9ba3-4c1ff73cf92e-attachment.json' type='application/json' size='95'/>
+                            </attachments>
+                            <steps>
+                                <step start='1665632566401' status='failed' stop='1665632566404'>
+                                    <name>POST /session/:sessionId/elements</name>
+                                    <title>POST /session/:sessionId/elements</title>
+                                    <attachments>
+                                        <attachment title='Request' source='07e285f5-7d22-41db-a78e-45675a20677d-attachment.json' type='application/json' size='103'/>
+                                    </attachments>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: Expect $(`.styles_timeout_otp__Sk8J3.styles_darkStyles__1FUX9`) to be existing</message>
+                <stack-trace>Error: Expect $(`.styles_timeout_otp__Sk8J3.styles_darkStyles__1FUX9`) to be existing
+                
+                Expected: "existing"
+                Received: "not existing"
+                    at World.&lt;anonymous> (/Users/vinh/PlayWright/Playwright/features/step-definitions/Unify_Login.ts:30:26)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1665632566404' status='pending' stop='1665632566404'>
+            <name>Then tôi xác nhận rằng page có title "Log in"</name>
+            <title>Then tôi xác nhận rằng page có title "Log in"</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1665632566404' status='pending' stop='1665632566404'>
+            <name>And tôi nhập vào ô cellphone 8320003188 và ô password 123456789aA</name>
+            <title>And tôi nhập vào ô cellphone 8320003188 và ô password 123456789aA</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1665632566404' status='pending' stop='1665632566404'>
+            <name>And tôi click vào nut Log in</name>
+            <title>And tôi click vào nut Log in</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1665632566404' status='pending' stop='1665632566404'>
+            <name>Then tôi thấy error The combination between phone number and password is not correct được hiển thị</name>
+            <title>Then tôi thấy error The combination between phone number and password is not correct được hiển thị</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1665632566404' status='passed' stop='1665632566404'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
